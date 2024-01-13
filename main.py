@@ -1,9 +1,6 @@
-import os
-os.system('pip install requests')
-os.system('pip install json')
-from flask import Flask
-import os,datetime,requests,json
-yr=datetime.datetime.now().year
+from flask import Flask,json
+import os,datetime,requests
+yr = datetime.datetime.now().year
 mn=datetime.datetime.now().month
 dy=datetime.datetime.now().dy
 url = 'https://www.nytimes.com/svc/wordle/v2/'+yr+'-'+mn+'-'+dy+'.json'
