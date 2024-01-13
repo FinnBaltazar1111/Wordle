@@ -1,9 +1,7 @@
 from flask import Flask,json
 import os,datetime,requests
-yr = datetime.datetime.now().year
-mn=datetime.datetime.now().month
-dy=datetime.datetime.now().dy
-url = 'https://www.nytimes.com/svc/wordle/v2/'+yr+'-'+mn+'-'+dy+'.json'
+dayyay = datetime.today()
+url = f'https://www.nytimes.com/svc/wordle/v2/{dayyay:%Y-%m-%d}.json'
 app = Flask(__name__)
 @app.route('/')
 def index():
