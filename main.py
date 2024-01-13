@@ -1,3 +1,6 @@
+import os
+os.system('pip install requests')
+os.system('pip install json')
 from flask import Flask
 import os,datetime,requests,json
 yr=datetime.datetime.now().year
